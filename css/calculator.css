@@ -1,0 +1,90 @@
+body {
+background-image:url("../img/bg.jpg");
+color:white;	
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  background: #ffffff;
+  font-family: monospace;
+  border: 5px solid;
+}
+
+.displayOne {
+  font-size: 2em;
+  margin-right: 20px;
+  align-self: center;
+  justify-self: right;
+}
+
+.displayTwo {
+  font-size: 5em;
+  margin-right: 20px;
+  align-self: center;
+  justify-self: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  font-size: 2em;
+}
+
+.numPad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #333333;
+}
+
+.num {
+  text-align: center;
+  line-height: 100px;
+  color:white;
+}
+
+.numcol {
+  text-align: center;
+  line-height: 100px;
+  background:#dab600;
+  color:white;
+}
+
+
+.operators {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #b49fd8;
+}
+
+.opcolor {
+ text-align: center;
+  line-height: 80px;
+  background:red;
+  color:#dab600;
+}
+
+.opt1 {
+  text-align: center;
+  line-height: 80px;
+  color:white;
+}
+
+.num, .opt1, .opcolor {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  transition: background-color .4s ease, opacity .4s ease;
+}
+
+.num:hover, .opt1:hover, .numcol:hover {
+  background-color: #ff5252;
+  opacity: .7;
+}
